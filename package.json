@@ -1,0 +1,33 @@
+{
+  "name": "make-pdf",
+  "version": "1.0.0",
+  "description": "Convert React/Vite slide decks to pixel-perfect PDFs",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "make-pdf": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "start": "node bin/cli.mjs"
+  },
+  "keywords": [
+    "pdf",
+    "slides",
+    "presentation",
+    "puppeteer",
+    "screenshot",
+    "figma",
+    "make",
+    "react",
+    "vite"
+  ],
+  "author": "Adam Younce",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "puppeteer": "^24.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
