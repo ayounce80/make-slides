@@ -243,6 +243,26 @@ await captureEditablePptx({
 - Cross-origin images may be blocked due to CORS
 - Host images on same domain or use screenshot mode
 
+## Security Considerations
+
+This tool uses Puppeteer to run headless Chrome for capturing slides. Please be aware of the following:
+
+### Trusted Content Only
+
+**Only use this tool with trusted slide decks and URLs.** The tool:
+- Launches a browser that executes JavaScript from the target URL
+- Uses `--no-sandbox` flags for compatibility with various environments
+
+### Sandbox Mode
+
+By default, Puppeteer runs with reduced sandboxing (`--no-sandbox`) for broad compatibility. This is standard for CLI tools but means:
+- The browser has less isolation from your system
+- Only capture content you trust
+
+### File Paths
+
+All file paths (output, screenshots directory) should be user-controlled. The tool does not sanitize paths, so avoid using it in contexts where paths could be attacker-controlled.
+
 ## How It Works
 
 ### PDF / PPTX-Image Mode

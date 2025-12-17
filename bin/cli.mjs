@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { program } from 'commander';
+import { program, Option } from 'commander';
 import { capturePDF } from '../lib/capture.mjs';
 import { captureEditablePptx } from '../lib/editable-pptx.mjs';
 import { detectConfig } from '../lib/detect.mjs';
@@ -10,11 +10,11 @@ import path from 'path';
 program
   .name('make-slides')
   .description('Convert React/Vite slide decks to PDF or editable PPTX')
-  .version('1.1.0')
+  .version('1.2.0')
   .option('-u, --url <url>', 'Dev server URL', 'http://localhost:5173')
   .option('-s, --slides <number>', 'Number of slides (auto-detected if not specified)')
   .option('-o, --output <file>', 'Output filename', 'presentation.pdf')
-  .option('-f, --format <type>', 'Output format: pdf, pptx-image, pptx-editable', 'pdf')
+  .addOption(new Option('-f, --format <type>', 'Output format').choices(['pdf', 'pptx-image', 'pptx-editable']).default('pdf'))
   .option('-e, --editable', 'Shorthand for --format pptx-editable (editable PowerPoint)')
   .option('-w, --width <pixels>', 'Viewport width', '1920')
   .option('--height <pixels>', 'Viewport height', '1080')
@@ -49,7 +49,7 @@ async function main() {
 
   // Load config file if exists
   let config = {};
-  const configPath = opts.config || 'make-pdf.config.json';
+  const configPath = opts.config || 'make-slides.config.json';
 
   if (fs.existsSync(configPath)) {
     console.log(`Loading config from ${configPath}...`);
