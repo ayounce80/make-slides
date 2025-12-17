@@ -104,6 +104,8 @@ make-slides --detect --dry-run
 | `--config` | `make-slides.config.json` | Config file path |
 | `--detect` | | Force auto-detection |
 | `--dry-run` | | Show config without capturing |
+| `--sandbox` | `false` | Run Chrome with sandbox (more secure) |
+| `--timeout` | `60000` | Download timeout for editable PPTX (ms) |
 
 ## Editable PPTX Details
 
@@ -258,6 +260,12 @@ This tool uses Puppeteer to run headless Chrome for capturing slides. Please be 
 By default, Puppeteer runs with reduced sandboxing (`--no-sandbox`) for broad compatibility. This is standard for CLI tools but means:
 - The browser has less isolation from your system
 - Only capture content you trust
+
+For increased security, use the `--sandbox` flag to enable Chrome's sandbox:
+```bash
+make-slides --sandbox -o slides.pdf
+```
+Note: Sandbox mode may not work in all environments (Docker, some CI systems).
 
 ### File Paths
 
