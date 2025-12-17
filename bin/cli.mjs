@@ -2,24 +2,27 @@
 
 import { program } from 'commander';
 import { capturePDF } from '../lib/capture.mjs';
+import { captureEditablePptx } from '../lib/editable-pptx.mjs';
 import { detectConfig } from '../lib/detect.mjs';
 import fs from 'fs';
 import path from 'path';
 
 program
-  .name('make-pdf')
-  .description('Convert React/Vite slide decks to pixel-perfect PDFs')
-  .version('1.0.0')
+  .name('make-slides')
+  .description('Convert React/Vite slide decks to PDF or editable PPTX')
+  .version('1.1.0')
   .option('-u, --url <url>', 'Dev server URL', 'http://localhost:5173')
   .option('-s, --slides <number>', 'Number of slides (auto-detected if not specified)')
-  .option('-o, --output <file>', 'Output PDF filename', 'presentation.pdf')
+  .option('-o, --output <file>', 'Output filename', 'presentation.pdf')
+  .option('-f, --format <type>', 'Output format: pdf, pptx-image, pptx-editable', 'pdf')
+  .option('-e, --editable', 'Shorthand for --format pptx-editable (editable PowerPoint)')
   .option('-w, --width <pixels>', 'Viewport width', '1920')
-  .option('-h, --height <pixels>', 'Viewport height', '1080')
+  .option('--height <pixels>', 'Viewport height', '1080')
   .option('--slide-selector <selector>', 'CSS selector for slide container')
   .option('--nav-selector <selector>', 'CSS selector for navigation dots')
   .option('--nav-method <method>', 'Navigation method: dots, keyboard, url', 'dots')
   .option('--wait <ms>', 'Wait time between slides in ms', '500')
-  .option('--keep-screenshots', 'Keep screenshot PNGs after PDF generation')
+  .option('--keep-screenshots', 'Keep screenshot PNGs after generation')
   .option('--screenshots-dir <dir>', 'Screenshots directory', './screenshots')
   .option('--config <file>', 'Config file path (make-pdf.config.json)')
   .option('--detect', 'Auto-detect slide deck configuration')
@@ -30,7 +33,19 @@ program.parse();
 const opts = program.opts();
 
 async function main() {
-  console.log('\n📄 make-pdf - React Slide Deck to PDF\n');
+  // Determine format
+  let format = opts.format;
+  if (opts.editable) {
+    format = 'pptx-editable';
+  }
+
+  // Set appropriate header
+  const formatLabels = {
+    'pdf': '📄 make-slides - React Slide Deck to PDF',
+    'pptx-image': '📊 make-slides - React Slide Deck to PPTX (screenshots)',
+    'pptx-editable': '✏️ make-slides - React Slide Deck to Editable PPTX'
+  };
+  console.log(`\n${formatLabels[format] || formatLabels['pdf']}\n`);
 
   // Load config file if exists
   let config = {};
@@ -54,11 +69,20 @@ async function main() {
     }
   }
 
+  // Determine output filename based on format if using default
+  let outputFile = opts.output;
+  if (outputFile === 'presentation.pdf') {
+    if (format === 'pptx-editable' || format === 'pptx-image') {
+      outputFile = 'presentation.pptx';
+    }
+  }
+
   // Merge CLI options over config
   const finalConfig = {
     url: opts.url,
     totalSlides: parseInt(opts.slides) || config.totalSlides || null,
-    output: opts.output,
+    output: outputFile,
+    format: format,
     viewport: {
       width: parseInt(opts.width),
       height: parseInt(opts.height)
@@ -78,7 +102,12 @@ async function main() {
   }
 
   try {
-    await capturePDF(finalConfig);
+    if (format === 'pptx-editable') {
+      await captureEditablePptx(finalConfig);
+    } else {
+      // pdf or pptx-image both use screenshot approach
+      await capturePDF(finalConfig);
+    }
     console.log('\n✅ Done!\n');
   } catch (err) {
     console.error('\n❌ Error:', err.message);
