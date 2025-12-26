@@ -1,0 +1,16 @@
+{
+  "name": "baseline",
+  "description": "Typography and spacing validation - basic 3-slide presentation",
+  "prompt": "Create a 3-slide presentation about project management basics. Include a title slide, one content slide with key principles, and a closing slide.",
+  "expectedSlides": ["title", "content", "closing"],
+  "checkpoints": [
+    "title slide has gradient or solid color background",
+    "title font size ~43pt (sz=4305)",
+    "content slide has header bar with accent color",
+    "body text ~13pt (sz=1315)",
+    "fonts are Roboto or similar sans-serif",
+    "closing slide has centered text"
+  ],
+  "maxSlides": 5,
+  "category": "business"
+}

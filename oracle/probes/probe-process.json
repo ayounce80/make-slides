@@ -1,0 +1,15 @@
+{
+  "name": "process",
+  "description": "Timeline and process flow visualization",
+  "prompt": "Create a slide showing a 5-step employee onboarding process: 1. Application Review, 2. Phone Interview, 3. On-site Interview, 4. Offer & Negotiation, 5. First Day Orientation. Show these as a horizontal timeline or process flow.",
+  "expectedElements": ["process-timeline", "numbered-item"],
+  "checkpoints": [
+    "5 steps shown horizontally",
+    "numbered badges or step indicators",
+    "connecting lines or arrows between steps",
+    "each step has title and optional description",
+    "consistent spacing and alignment"
+  ],
+  "maxSlides": 2,
+  "category": "business"
+}

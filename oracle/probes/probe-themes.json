@@ -1,0 +1,54 @@
+{
+  "name": "themes",
+  "description": "Dynamic theme generation by domain/topic",
+  "prompts": [
+    {
+      "id": "fashion",
+      "prompt": "Create a 3-slide pitch deck for a luxury fashion brand launching a new spring collection.",
+      "expectedTheme": {
+        "primaryColor": "pink/coral/magenta",
+        "headingFont": "Playfair Display or serif",
+        "bodyFont": "Source Sans Pro",
+        "backgroundStyle": "photo overlay likely"
+      }
+    },
+    {
+      "id": "technical",
+      "prompt": "Create a 3-slide technical architecture overview for a cloud-based SaaS platform.",
+      "expectedTheme": {
+        "primaryColor": "blue",
+        "headingFont": "Roboto",
+        "bodyFont": "Roboto",
+        "backgroundStyle": "solid colors"
+      }
+    },
+    {
+      "id": "sports",
+      "prompt": "Create a 3-slide presentation about LeBron James's career highlights and achievements.",
+      "expectedTheme": {
+        "primaryColor": "team colors or gold",
+        "headingFont": "Source Sans Pro or Impact",
+        "bodyFont": "sans-serif",
+        "backgroundStyle": "photo overlay likely"
+      }
+    },
+    {
+      "id": "science",
+      "prompt": "Create a 3-slide introduction to quantum computing for beginners.",
+      "expectedTheme": {
+        "primaryColor": "blue/purple",
+        "headingFont": "sans-serif",
+        "bodyFont": "sans-serif",
+        "specialFont": "Courier New for formulas"
+      }
+    }
+  ],
+  "checkpoints": [
+    "primary accent color matches domain semantics",
+    "font pairing appropriate for topic",
+    "background style matches formality level",
+    "creative topics may have photo backgrounds",
+    "business topics use solid colors"
+  ],
+  "category": "themes"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "cards",
+  "description": "Icon card layout patterns - 2x2 grid of benefit cards",
+  "prompt": "Create a single slide showing 4 key benefits of cloud computing. Use icons and short descriptions for each benefit: Cost Savings, Scalability, Security, and Flexibility.",
+  "expectedElements": ["icon-card"],
+  "checkpoints": [
+    "4 icon cards arranged in 2x2 grid",
+    "each card has: icon + title + description",
+    "icons are colored to match theme",
+    "card backgrounds have subtle fill or border",
+    "consistent spacing between cards"
+  ],
+  "maxSlides": 2,
+  "category": "business"
+}

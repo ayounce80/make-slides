@@ -1,0 +1,16 @@
+{
+  "name": "charts",
+  "description": "Data visualization and chart handling",
+  "prompt": "Create a slide showing quarterly revenue data as a bar chart: Q1 2024: $10M, Q2 2024: $15M, Q3 2024: $12M, Q4 2024: $20M. Include axis labels and a title.",
+  "expectedElements": ["chart", "bar-chart"],
+  "checkpoints": [
+    "chart present (either as shapes or image)",
+    "4 bars representing quarters",
+    "axis labels visible",
+    "values or data labels shown",
+    "determine: editable shapes vs rasterized image"
+  ],
+  "maxSlides": 2,
+  "category": "business",
+  "notes": "Critical test - determines if charts are native PPTX objects or images"
+}

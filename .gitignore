@@ -2,3 +2,12 @@ node_modules/
 screenshots/
 *.pdf
 .DS_Store
+
+# Build outputs
+dist/
+
+# Cache
+.icon-cache/
+
+# Research data (large PPTX files, images)
+data/

@@ -1,14 +1,25 @@
 {
   "name": "make-slides",
-  "version": "1.3.0",
-  "description": "Convert React/Vite slide decks to PDF or editable PowerPoint presentations",
+  "version": "2.0.0",
+  "description": "Convert React/Vite slide decks to PDF or generate editable PowerPoint from schema",
   "type": "module",
   "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./magic": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "bin": {
     "make-slides": "./bin/cli.mjs"
   },
   "scripts": {
-    "start": "node bin/cli.mjs"
+    "start": "node bin/cli.mjs",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "pdf",
@@ -22,7 +33,10 @@
     "make",
     "react",
     "vite",
-    "dom-to-pptx"
+    "dom-to-pptx",
+    "magic-slides",
+    "schema",
+    "generator"
   ],
   "author": "Adam Younce",
   "license": "MIT",
@@ -31,6 +45,15 @@
     "dom-to-pptx": "^1.0.8",
     "pptxgenjs": "^4.0.1",
     "puppeteer": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.3",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.9.3"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.33.0"
   },
   "engines": {
     "node": ">=18.0.0"

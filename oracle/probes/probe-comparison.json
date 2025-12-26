@@ -1,0 +1,15 @@
+{
+  "name": "comparison",
+  "description": "Feature matrix and comparison tables",
+  "prompt": "Create a comparison slide for AWS vs Azure vs GCP. Compare across these criteria: Pricing (AWS: $$, Azure: $$$, GCP: $$), Scalability (all: Yes), Security (all: Yes), Ease of Use (AWS: Medium, Azure: Easy, GCP: Medium), Market Share (AWS: 32%, Azure: 23%, GCP: 10%).",
+  "expectedElements": ["comparison-table", "comparison-row"],
+  "checkpoints": [
+    "3-column layout (one per provider)",
+    "row headers for each criterion",
+    "Yes values shown with check icons",
+    "row striping or alternating backgrounds",
+    "column headers styled distinctly"
+  ],
+  "maxSlides": 2,
+  "category": "business"
+}
