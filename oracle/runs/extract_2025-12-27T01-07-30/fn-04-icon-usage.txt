@@ -1,0 +1,292 @@
+TECHNIQUE: Request icon integration example
+
+PROMPT:
+请展示如何在幻灯片 HTML 中使用 Material Design Icons。假设我需要一个带图标的卡片组件，请给出完整的 HTML 代码，包括图标的引入方式和使用语法。
+
+RESPONSE:
+用户询问如何在幻灯片HTML中使用Material Design Icons，并需要一个带图标的卡片组件的完整HTML代码示例。我需要搜索相关信息，包括：
+1. Material Design Icons的引入方式
+2. Material Design Icons的使用语法
+3. 在HTML中创建带图标的卡片组件的示例代码
+
+让我首先搜索这些信息，然后整合成一个完整的示例。我将搜索关于Material Design Icons的引入和使用方法，以及如何在HTML中创建带图标的卡片组件。
+从搜索结果中，我看到了多个关于Material Design Icons的引入和使用方法的信息。我需要访问一些关键页面来获取更详细的信息：
+
+1. 首先，我应该了解Material Design Icons的基本引入方式
+2. 然后了解如何在HTML中使用这些图标
+3. 最后，我需要找到如何创建带图标的卡片组件的示例
+
+让我先访问"Material icons Material Design icons全图标代码及使用教程"这个页面，因为它看起来包含了比较全面的信息。我将访问一些关键页面来获取更详细的信息，特别是关于Material Design Icons的引入方式和使用语法。
+我已经获取了关于Material Design Icons的基本引入和使用方法的信息。现在我需要了解如何在HTML中创建带图标的卡片组件。
+
+从搜索结果中，我看到有几个页面可能包含这方面的信息：
+1. "卡片" - https://www.mintlify.com/docs/zh/components/cards
+2. "LimeCard 卡片组件" - https://limex.qcoon.cn/components/card.html
+
+让我先访问第一个页面，看看是否有关于带图标卡片组件的示例。我需要了解如何在HTML中创建带图标的卡片组件，我将访问相关页面获取更多信息。
+我已经获取了关于Material Design Icons的基本使用方法和卡片组件的信息，但这个页面是关于Mintlify的卡片组件，而不是标准的HTML卡片组件。我需要找到更多关于标准HTML中如何创建带Material Design Icons的卡片组件的信息。
+
+让我访问"LimeCard 卡片组件"页面，看看是否有更接近标准HTML的实现。我需要查看更多关于HTML卡片组件的信息，让我访问另一个页面。
+我已经获取了关于Material Design Icons的基本使用方法和一些卡片组件的信息，但这些页面都是关于特定框架的卡片组件，而不是标准的HTML卡片组件。
+
+现在，我需要整合这些信息，创建一个完整的HTML示例，展示如何使用Material Design Icons创建带图标的卡片组件。
+
+基于我收集的信息，我可以创建一个示例，包括：
+1. 引入Material Design Icons的CSS
+2. 创建一个带图标的卡片组件
+3. 添加一些样式使卡片看起来更美观
+
+让我先搜索一些Material Design Icons的示例，以便在代码中使用。让我搜索一些Material Design Icons的示例，以便在代码中使用。
+现在我已经收集了足够的信息，可以创建一个完整的HTML示例，展示如何使用Material Design Icons创建带图标的卡片组件。
+
+我将创建一个包含以下内容的HTML文件：
+1. 引入Material Design Icons的CSS
+2. 创建一个带图标的卡片组件
+3. 添加一些样式使卡片看起来更美观
+4. 包含多个不同类型的卡片示例
+
+让我使用initialize_design函数来创建这个HTML文件。现在我将创建一个完整的HTML示例，展示如何使用Material Design Icons创建带图标的卡片组件。
+我已经成功创建了一个名为"Material Design Icons 卡片组件示例"的页面。现在我需要使用insert_page工具来添加内容。
+
+我将创建一个包含多个卡片组件的页面，展示如何使用Material Design Icons。我将添加以下内容：
+1. 页面标题和简介
+2. Material Design Icons的引入方式说明
+3. 多个不同类型的卡片组件示例
+
+让我开始添加这些内容。现在我将添加页面内容，包括标题、简介和多个卡片组件示例。
+看起来系统提示我需要控制PPT页面尺寸（长度1280px，宽度720px），精简内容，禁止使用上-中-下堆叠的结构，不要上下排列图片和charts图表并控制高度。
+
+我需要重新规划内容，创建一个更简洁的幻灯片，专注于展示Material Design Icons的引入方式和使用语法，以及一个简单的带图标的卡片组件示例。
+
+让我重新设计内容，确保符合系统要求。我需要重新设计内容，创建一个更简洁的幻灯片，专注于展示Material Design Icons的引入方式和使用语法。
+我已经成功更新了幻灯片，创建了一个简洁的Material Design Icons使用指南。现在我需要向用户展示这个幻灯片，并解释其中的内容。
+
+这个幻灯片包含了：
+1. Material Design Icons的引入方式
+2. 基本语法和使用方法
+3. 一个带图标的卡片组件示例
+
+我将向用户解释这些内容，并提供完整的HTML代码示例，以便他们可以在自己的项目中使用。# Material Design Icons 卡片组件示例
+
+我已经为您创建了一个简洁的幻灯片，展示如何在HTML中使用Material Design Icons创建带图标的卡片组件。下面是完整的HTML代码和使用说明：
+
+## 引入Material Design Icons
+
+要在HTML中使用Material Design Icons，首先需要在页面头部引入图标库：
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+## 基本语法
+
+Material Design Icons的基本使用语法非常简单：
+
+```html
+<i class="material-icons">icon_name</i>
+```
+
+其中，`icon_name`是您想要使用的图标名称，例如：`home`、`settings`、`favorite`等。
+
+## 带图标的卡片组件示例
+
+下面是一个完整的带图标的卡片组件示例：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design Icons 卡片组件示例</title>
+    
+    <!-- 引入Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .card-icon {
+            margin-right: 20px;
+            background-color: #f5f5f5;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card-icon .material-icons {
+            font-size: 30px;
+            color: #1976d2;
+        }
+        
+        .card-content {
+            flex: 1;
+        }
+        
+        .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .card-description {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .card-action {
+            margin-left: 20px;
+            color: #1976d2;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-action .material-icons {
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        
+        /* 图标颜色示例 */
+        .icon-blue { color: #2196f3; }
+        .icon-green { color: #4caf50; }
+        .icon-red { color: #f44336; }
+        .icon-purple { color: #9c27b0; }
+        
+        /* 图标大小示例 */
+        .icon-small { font-size: 18px; }
+        .icon-medium { font-size: 24px; }
+        .icon-large { font-size: 36px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Material Design Icons 卡片组件示例</h1>
+        
+        <!-- 基础卡片 -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+                <div class="card-title">用户资料</div>
+                <div class="card-description">管理您的个人信息和账户设置</div>
+            </div>
+            <div class="card-action">
+                编辑
+                <i class="material-icons">arrow_forward</i>
+            </div>
+        </div>
+        
+        <!-- 带不同颜色图标的卡片 -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="material-icons icon-green">shopping_cart</i>
+            </div>
+            <div class="card-content">
+                <div class="card-title">购物车</div>
+                <div class="card-description">查看和管理您的购物车商品</div>
+            </div>
+            <div class="card-action">
+                结算
+                <i class="material-icons">payment</i>
+            </div>
+        </div>
+        
+        <!-- 带不同大小图标的卡片 -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="material-icons icon-large icon-purple">settings</i>
+            </div>
+            <div class="card-content">
+                <div class="card-title">系统设置</div>
+                <div class="card-description">配置应用程序的各种选项</div>
+            </div>
+            <div class="card-action">
+                配置
+                <i class="material-icons">tune</i>
+            </div>
+        </div>
+        
+        <!-- 带多个图标的卡片 -->
+        <div class="card">
+            <div class="card-icon">
+                <i class="material-icons icon-red">favorite</i>
+            </div>
+            <div class="card-content">
+                <div class="card-title">收藏夹</div>
+                <div class="card-description">您收藏的内容和喜欢的项目</div>
+            </div>
+            <div class="card-action">
+                管理
+                <i class="material-icons">folder</i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## 关键点说明
+
+1. **引入方式**：通过Google Fonts CDN引入Material Design Icons
+2. **基本语法**：使用`<i class="material-icons">icon_name</i>`来显示图标
+3. **自定义样式**：
+   - 通过CSS类设置图标颜色：`.icon-blue { color: #2196f3; }`
+   - 通过CSS类设置图标大小：`.icon-large { font-size: 36px; }`
+4. **卡片组件**：使用Flexbox布局创建响应式卡片，图标、内容和操作按钮排列整齐
+
+## 扩展功能
+
+1. **图标变体**：Material Design Icons还提供了轮廓图标、圆角图标等变体：
+   ```html
+   <!-- 轮廓图标 -->
+   <i class="material-icons-outlined">favorite_border</i>
+   
+   <!-- 圆角图标 -->
+   <i class="material-icons-round">favorite</i>
+   
+   <!-- 锐角图标 -->
+   <i class="material-icons-sharp">favorite</i>
+   ```
+
+2. **动态图标**：可以通过JavaScript动态更改图标：
+   ```javascript
+   // 更改图标
+   document.querySelector('.card-icon .material-icons').textContent = 'check_circle';
+   ```
+
+这个示例展示了如何在HTML中有效使用Material Design Icons创建美观的卡片组件。您可以根据需要调整样式和布局，创建适合您项目的设计。

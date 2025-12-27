@@ -1,0 +1,240 @@
+TECHNIQUE: Request cover slide HTML
+
+PROMPT:
+请展示一个封面幻灯片的完整 HTML 代码示例。假设标题是 2025年度报告，副标题是 公司发展概述。我需要看到你实际会生成的 HTML 结构，包括所有样式。
+
+RESPONSE:
+用户要求我展示一个封面幻灯片的完整HTML代码示例，标题是"2025年度报告"，副标题是"公司发展概述"。我需要创建一个完整的HTML页面，包括所有必要的样式。
+
+我将创建一个专业的封面幻灯片，包含以下元素：
+1. 标题和副标题
+2. 适当的样式和布局
+3. 可能的背景设计
+4. 响应式设计
+
+我会使用现代的CSS样式，确保幻灯片看起来专业且吸引人。我会使用一个简洁但专业的设计，适合公司年度报告的封面。我将为您创建一个专业的封面幻灯片HTML示例，标题为"2025年度报告"，副标题为"公司发展概述"。这将是一个完整的HTML文件，包含所有必要的样式和结构。
+我已经获取了一些适合作为背景的图片。现在我将创建一个完整的HTML封面幻灯片，使用第一个蓝色渐变背景的图片作为背景。我会创建一个专业、现代的设计，包含标题"2025年度报告"和副标题"公司发展概述"。
+
+我将使用以下元素：
+1. 响应式设计，确保在不同设备上都能良好显示
+2. 蓝色渐变背景，营造专业感
+3. 清晰的标题和副标题排版
+4. 可能添加一些简单的装饰元素，如公司标志或日期
+5. 使用现代字体和适当的间距
+
+让我创建这个HTML文件。现在我将为您创建一个封面幻灯片的完整HTML代码示例。这个设计将采用专业、现代的风格，适合公司年度报告使用。
+现在我需要创建封面幻灯片的具体内容。我将使用insert_page工具来创建这个封面幻灯片。我会设计一个专业、现代的封面，包含以下元素：
+
+1. 主标题"2025年度报告"（大号字体）
+2. 副标题"公司发展概述"（中等大小字体）
+3. 日期"2025年12月27日"（小号字体）
+4. 蓝色渐变背景
+5. 可能添加一些简单的装饰元素
+
+我将确保整体设计专业、大气，适合企业年度报告使用。现在我将创建封面幻灯片的具体内容，包含标题、副标题和适当的视觉元素。
+现在我已经成功创建了封面幻灯片。我需要向用户展示完整的HTML代码，包括所有样式。我将提供一个完整的HTML文件，用户可以直接复制并使用。这个HTML文件将包含：
+
+1. 完整的HTML结构
+2. 内联CSS样式
+3. 响应式设计
+4. 蓝色渐变背景
+5. 标题和副标题的排版
+6. 适当的字体和间距
+
+我会确保代码清晰、易于理解，并且可以直接在浏览器中运行。以下是封面幻灯片的完整HTML代码示例。您可以直接复制此代码并在浏览器中打开查看效果：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年度报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a237e, #0d47a1, #01579b);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://mfile.z.ai/1766797678251-f8943ceb37474ba98a7eae04ba4ba03e.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+            padding: 0 80px;
+        }
+        
+        .title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.2s ease-out;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .date {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            animation: fadeIn 1.8s ease-out;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            z-index: 1;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -100px;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            right: -50px;
+        }
+        
+        .circle-3 {
+            width: 150px;
+            height: 150px;
+            bottom: 100px;
+            left: 100px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1366px) {
+            .slide-container {
+                width: 90%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+            
+            .title {
+                font-size: 48px;
+            }
+            
+            .subtitle {
+                font-size: 24px;
+            }
+            
+            .date {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 0 40px;
+            }
+            
+            .title {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            
+            .subtitle {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .date {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="background-overlay"></div>
+        
+        <div class="decorative-element circle-1"></div>
+        <div class="decorative-element circle-2"></div>
+        <div class="decorative-element circle-3"></div>
+        
+        <div class="content">
+            <h1 class="title">2025年度报告</h1>
+            <h2 class="subtitle">公司发展概述</h2>
+            <p class="date">2025年12月27日</p>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+这个HTML代码包含以下特点：
+
+1. **响应式设计**：在不同屏幕尺寸上都能良好显示
+2. **蓝色渐变背景**：使用从深蓝到浅蓝的渐变，营造专业感
+3. **半透明背景图片**：添加了抽象的蓝色图案作为背景装饰
+4. **清晰的标题和副标题**：使用不同大小的字体区分层级
+5. **淡入动画效果**：页面元素加载时有优雅的淡入效果
+6. **装饰性圆形元素**：添加了半透明的圆形装饰元素增加视觉层次
+7. **阴影效果**：为容器添加了阴影，增强立体感
+
+您可以直接将此代码保存为HTML文件并在浏览器中打开查看效果。如需修改，可以调整颜色、字体大小或添加其他元素。

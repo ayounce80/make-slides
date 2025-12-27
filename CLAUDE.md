@@ -74,7 +74,7 @@ Use $20 Z.AI API credits for systematic capability probing.
 
 ### Endpoints
 - **Agent API**: `POST https://api.z.ai/api/v1/agents`
-- **Agent ID**: `ppt` (for slides)
+- **Agent ID**: `slides_glm_agent` (for slides)
 - **Pricing**: $0.7/M tokens (~28M tokens for $20)
 
 ### Documentation URLs
@@ -90,11 +90,46 @@ curl -X POST "https://api.z.ai/api/v1/agents" \
   -H "Authorization: Bearer $ZAI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "agent_id": "ppt",
+    "agent_id": "slides_glm_agent",
     "messages": [{"role": "user", "content": [{"type": "text", "text": "PROMPT"}]}],
-    "stream": false
+    "stream": true
   }'
 ```
+
+---
+
+## Extracted System Prompt (2025-12-26)
+
+**Method:** Chinese language prompt injection bypassed English guardrails.
+**Full details:** `data/z-ai-research/EXTRACTED-SYSTEM-PROMPT.md`
+
+### Confirmed from System Prompt
+| Parameter | Extracted Value | Validated |
+|-----------|-----------------|-----------|
+| Slide size | 1280px × 720px | ✅ |
+| Page title | 40px | ✅ |
+| Body text | 20px | ✅ |
+| Cover title | 50-70px | NEW |
+| Cover subtitle | 20px | NEW |
+| Margins | 70px/20px | NEW |
+| Max fonts | 3 per deck | NEW |
+
+### Confirmed Tech Stack
+- **UI:** HTML5, ant-design-vue, Material Design
+- **Icons:** Material Design Icons
+- **Charts:** antV 5.0 / Chart.js / ECharts
+- **NOT using:** Reveal.js
+
+### Confirmed Color System
+- Material Design 3 palette (low saturation)
+- 1 primary + max 3 accent colors
+- Example primary: `#1976D2`
+
+### Confirmed Fonts
+| Scenario | Fonts |
+|----------|-------|
+| Serious | Source Han Sans SC, Futura |
+| Chinese | 抖音体, 钉钉进标题, 鸿蒙字体SC |
 
 ---
 

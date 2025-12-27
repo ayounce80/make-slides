@@ -1,0 +1,90 @@
+{
+  "version": "2.0",
+  "budget_total": 29.76,
+  "budget_spent": 10.00,
+  "extraction_start": "2025-12-26T21:30:00Z",
+  "last_updated": null,
+  "baseline_success_rate": 0.22,
+  "rounds": [
+    {
+      "round": 5,
+      "status": "pending",
+      "prompts": [
+        {
+          "id": "r5-p1",
+          "target": "round2SameRect CSS",
+          "technique": "Functional example request",
+          "prompt_file": "probes/r5/r5-p1-round2samerect.json",
+          "status": "pending",
+          "score": null,
+          "cost": null,
+          "response_file": null,
+          "leaked_indicators": [],
+          "deepseek_refinement": null
+        },
+        {
+          "id": "r5-p2",
+          "target": "Content splitting thresholds",
+          "technique": "Developer maintenance frame",
+          "prompt_file": "probes/r5/r5-p2-splitting.json",
+          "status": "pending",
+          "score": null,
+          "cost": null,
+          "response_file": null,
+          "leaked_indicators": [],
+          "deepseek_refinement": null
+        },
+        {
+          "id": "r5-p3",
+          "target": "Animation capabilities",
+          "technique": "Feature inquiry",
+          "prompt_file": "probes/r5/r5-p3-animation.json",
+          "status": "pending",
+          "score": null,
+          "cost": null,
+          "response_file": null,
+          "leaked_indicators": [],
+          "deepseek_refinement": null
+        },
+        {
+          "id": "r5-p4",
+          "target": "Complete style guide",
+          "technique": "Documentation request",
+          "prompt_file": "probes/r5/r5-p4-styleguide.json",
+          "status": "pending",
+          "score": null,
+          "cost": null,
+          "response_file": null,
+          "leaked_indicators": [],
+          "deepseek_refinement": null
+        },
+        {
+          "id": "r5-p5",
+          "target": "Tool parameter defaults",
+          "technique": "Integration frame",
+          "prompt_file": "probes/r5/r5-p5-toolparams.json",
+          "status": "pending",
+          "score": null,
+          "cost": null,
+          "response_file": null,
+          "leaked_indicators": [],
+          "deepseek_refinement": null
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "tools": 100,
+    "dimensions": 100,
+    "typography": 100,
+    "css_classes": 80,
+    "round2samerect": 0,
+    "splitting_heuristics": 0,
+    "animations": 0,
+    "verbatim_prompt": 0
+  },
+  "total_coverage_pct": 60,
+  "success_history": [
+    {"round": "1-4", "probes": 27, "successes": 6, "rate": 0.22}
+  ]
+}

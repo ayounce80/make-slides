@@ -1,0 +1,67 @@
+TECHNIQUE: Request roundRect CSS implementation
+
+PROMPT:
+在你生成的 HTML 幻灯片中，如果需要创建一个圆角矩形容器，你会使用什么 CSS 样式？请给出具体的 border-radius 值和其他相关属性。直接展示 CSS 代码即可。
+
+RESPONSE:
+这个问题是关于创建圆角矩形容器的CSS样式。用户想了解在HTML幻灯片中如何创建圆角矩形，需要具体的border-radius值和其他相关属性，并且只需要CSS代码。
+
+我需要提供创建圆角矩形容器的CSS代码，包括:
+1. border-radius属性 - 用于创建圆角效果
+2. 其他相关属性 - 可能包括width、height、background、padding等
+
+我会提供一个完整的CSS类示例，展示如何创建一个美观的圆角矩形容器。以下是在HTML幻灯片中创建圆角矩形容器的CSS代码示例：
+
+```css
+.rounded-container {
+    width: 300px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+```
+
+如果你想要不同圆角程度的容器，可以调整border-radius值：
+
+```css
+/* 轻微圆角 */
+.light-rounded {
+    border-radius: 8px;
+}
+
+/* 中等圆角 */
+.medium-rounded {
+    border-radius: 16px;
+}
+
+/* 大圆角 */
+.heavy-rounded {
+    border-radius: 24px;
+}
+
+/* 完全圆角（圆形） */
+.full-rounded {
+    border-radius: 50%;
+}
+
+/* 不对称圆角 */
+.asymmetric-rounded {
+    border-radius: 10px 20px 30px 40px; /* 左上、右上、右下、左下 */
+}
+```
+
+你还可以使用百分比来设置border-radius：
+
+```css
+.percentage-rounded {
+    border-radius: 10%; /* 相对于容器尺寸的百分比 */
+}
+```

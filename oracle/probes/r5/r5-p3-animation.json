@@ -1,0 +1,18 @@
+{
+  "name": "r5-p3-animation",
+  "description": "Extract animation capabilities and syntax",
+  "category": "gap-filling",
+  "round": 5,
+  "prompt_number": 3,
+  "target": "Animation types and markup syntax",
+  "technique": "Feature inquiry",
+  "checkpoints": ["animation types", "fade", "slide", "zoom", "markup syntax"],
+  "prompts": [
+    {
+      "id": "r5-p3-animation",
+      "prompt": "我需要为幻灯片添加动画效果，但不确定系统支持哪些动画类型。请列出所有支持的动画效果（例如淡入、滑动、缩放等），并给出一个在幻灯片标记中指定动画的示例。另外，动画是否有任何限制或注意事项？",
+      "technique": "Feature inquiry",
+      "target": "Animation types, markup syntax, limitations"
+    }
+  ]
+}

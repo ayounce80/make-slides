@@ -89,8 +89,11 @@ async function main() {
   const singleId = args.find((a) => a.startsWith('--single='))?.split('=')[1]
     || (args.includes('--single') ? args[args.indexOf('--single') + 1] : null);
 
+  const probeFile = args.find((a) => a.startsWith('--probe='))?.split('=')[1]
+    || (args.includes('--probe') ? args[args.indexOf('--probe') + 1] : 'probe-extract-prompt');
+
   // Load probes
-  const probePath = path.join(__dirname, '../probes/probe-extract-prompt.json');
+  const probePath = path.join(__dirname, '../probes', `${probeFile}.json`);
   const probeConfig = JSON.parse(fs.readFileSync(probePath, 'utf-8'));
   let probes: Probe[] = probeConfig.prompts;
 
